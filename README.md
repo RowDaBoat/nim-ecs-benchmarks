@@ -50,15 +50,6 @@ Measures the heap overhead introduced by the ECS when handling 10,000 entities.
 
 ---
 
-## Which one should I choose?
-
-*   **For High-Performance Games/Simulations (RTS, Particles)**: Use **Cruise Dense**. Its archetype-based iteration is the fastest and most memory-stable.
-*   **For Gameplay-Heavy Projects (RPG, Immersive Sim)**: Use **Easyess**. It excels at frequent component mutations (status effects, equipment changes) with very low memory overhead.
-*   **For Maximum Flexibility**: Use **Cruise Sparse**. It offers a great middle ground with sparse-set flexibility and very competitive iteration speeds.
-*   **For Safety and Structure**: Use **Necsus**. If you prefer a structured framework that guides your architecture and you don't need to process 100k+ entities per frame.
-
----
-
 ## How to run benchmarks
 
 Ensure you have Nim installed and the libraries located in the `libs/` folder.
